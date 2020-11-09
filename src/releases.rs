@@ -1,7 +1,7 @@
 //! Module for getting a release.
 
 use crate::artifacts::*;
-use crate::install::InstallOpts;
+use crate::cmd::InstallCmd;
 use crate::security::*;
 
 use std::io::Cursor;
@@ -26,9 +26,9 @@ impl Default for ReleaseGetOpts {
     }
 }
 
-impl From<&InstallOpts> for ReleaseGetOpts {
+impl From<&InstallCmd> for ReleaseGetOpts {
     #[allow(missing_docs)]
-    fn from(src: &InstallOpts) -> Self {
+    fn from(src: &InstallCmd) -> Self {
         Self {
             check_integrity: src.check_integrity(),
             check_sig: src.check_sig(),
@@ -46,13 +46,13 @@ impl ReleaseGetOpts {
         }
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn check_integrity(&self) -> bool {
         self.check_integrity
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn check_sig(&self) -> bool {
         self.check_sig

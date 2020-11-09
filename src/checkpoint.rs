@@ -22,49 +22,49 @@ pub struct CheckResponse {
 }
 
 impl CheckResponse {
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn product(&self) -> &str {
         self.product.as_str()
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn current_version(&self) -> &str {
         self.current_version.as_str()
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn current_release(&self) -> i32 {
         self.current_release
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn current_download_url(&self) -> &str {
         self.current_download_url.as_str()
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn current_changelog_url(&self) -> &str {
         self.current_changelog_url.as_str()
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn project_website(&self) -> &str {
         self.project_website.as_str()
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn outdated(&self) -> bool {
         self.outdated
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn alerts(&self) -> &[CheckAlert] {
         self.alerts.as_slice()
@@ -85,31 +85,31 @@ pub struct CheckAlert {
 }
 
 impl CheckAlert {
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn id(&self) -> i32 {
         self.id
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn date(&self) -> i32 {
         self.date
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn message(&self) -> &str {
         self.message.as_str()
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn url(&self) -> &str {
         self.url.as_str()
     }
 
-    #[allow(missing_docs)]
+    #[allow(missing_docs, dead_code)]
     #[inline]
     pub fn level(&self) -> &str {
         self.level.as_str()
