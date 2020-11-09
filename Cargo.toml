@@ -1,0 +1,24 @@
+[package]
+name = "nomadutil"
+version = "0.1.0"
+authors = ["cezarmathe <me@cezarmathe.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow     = "1.0"
+bytes      = "0.5.6"
+chrono     = { version = "0.4", features = ["serde"] }
+clap       = "2"
+colored    = "2"
+fern       = "0.6"
+gpgrv      = "0.3"
+hex        = "0.4"
+log        = "0.4"
+reqwest    = { version = "0.10", features = ["blocking", "json"] }
+rust-embed = { version = "5.6", features = ["compression"] }
+serde      = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2       = "0.9"
+zip        = "0.5"
