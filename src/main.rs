@@ -27,6 +27,9 @@ const NOMADUTIL_VERSION: &str = "0.1.0";
 #[cfg(target_arch = "x86_64")]
 pub const ARCH: &str = "amd64";
 
+#[cfg(target_arch = "aarch64")]
+pub const ARCH: &str = "arm64";
+
 #[cfg(target_os = "linux")]
 fn main() {
     let app: App = {
